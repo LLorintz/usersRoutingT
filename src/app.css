@@ -1,0 +1,42 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #f9f9f9;
+}
+
+.user-card{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    width: 180px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.user-card:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.user-card img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.user-card p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.user-card a{
+    background-color:#6100e9;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
