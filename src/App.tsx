@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"
 import './app.css'
 import { useEffect, useState } from "react"
 
-import { user } from "./pages/UsersPage"
+import { user } from "./pages/UserDetailsPage"
 
 function App() {
 
@@ -37,7 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage></HomePage>} ></Route>
           <Route path='/users' element={<UsersPage users={users}></UsersPage>}></Route>
-          <Route path="/users/:id" element={<UserDetailsPage></UserDetailsPage>}></Route>
+          <Route path="/users/:id" element={<UserDetailsPage users={users}></UserDetailsPage>}></Route>
         </Routes>
       </BrowserRouter>  
     </div>
