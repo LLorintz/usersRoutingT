@@ -1,10 +1,14 @@
+import { user } from "../pages/UsersPage"
 
+type userprops = {
+  user:user
+}
 
-const UserCard = () => {
+const UserCard = ({user}:userprops) => {
   return (
     <div className="user-card">
-        <img src='https://randomuser.me/api/portraits/women/32.jpg' alt="" />
-        <p>Scarlett Wattson</p>
+        <img src={user.picture.large} alt="" />
+        <p>{user.name.first} {user.name.last}</p>
         <a href="">View Details</a>
     </div>
   )
